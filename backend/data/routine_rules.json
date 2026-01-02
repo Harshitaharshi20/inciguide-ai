@@ -1,0 +1,31 @@
+{
+  "routine_order": [
+    "cleanser",
+    "toner",
+    "serum",
+    "moisturizer",
+    "sunscreen"
+  ],
+  "conflicting_ingredients": [
+    {
+      "ingredients": ["retinol", "strong exfoliants"],
+      "reason": "May cause irritation when layered together"
+    },
+    {
+      "ingredients": ["vitamin c", "niacinamide"],
+      "reason": "May reduce effectiveness when layered improperly"
+    }
+  ],
+  "step_specific_rules": {
+    "cleanser": {
+      "notes": "Should be gentle and non-irritating"
+    },
+    "serum": {
+      "notes": "Actives should be introduced carefully"
+    },
+    "sunscreen": {
+      "allowed_routine": "AM",
+      "notes": "Should be last step in morning routine"
+    }
+  }
+}

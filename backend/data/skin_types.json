@@ -1,0 +1,9 @@
+{
+  "Sensitive": {
+    "avoid": ["fragrance", "alcohol"],
+    "notes": "Lower tolerance to irritants"
+  },
+  "Oily": {
+    "prefer": ["niacinamide", "salicylic acid"]
+  }
+}

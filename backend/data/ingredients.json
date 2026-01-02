@@ -1,0 +1,17 @@
+{
+  "fragrance": {
+    "risk": "high",
+    "avoid_for": ["Sensitive"],
+    "description": "Fragrance may cause irritation or allergic reactions, especially for sensitive skin."
+  },
+  "salicylic acid": {
+    "risk": "medium",
+    "avoid_for": [],
+    "description": "Helps unclog pores but may be drying if overused."
+  },
+  "glycerin": {
+    "risk": "low",
+    "avoid_for": [],
+    "description": "A humectant that helps retain moisture and supports skin hydration."
+  }
+}

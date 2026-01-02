@@ -1,0 +1,18 @@
+{
+  "signals": {
+    "missing_ingredients": "lower_confidence",
+    "label_spelling_errors": "lower_confidence",
+    "unusual_ordering": "lower_confidence"
+  },
+  "minimum_ingredient_count": 3,
+  "suspicious_patterns": [
+    "miracle",
+    "instant whitening",
+    "100% chemical free"
+  ],
+  "penalties": {
+    "too_few_ingredients": 30,
+    "suspicious_claim": 20,
+    "unusual_ordering": 15
+  }
+}
