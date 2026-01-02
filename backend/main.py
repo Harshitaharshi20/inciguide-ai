@@ -5,6 +5,9 @@ from services.ingredient_engine import analyze_ingredients
 from services.routine_engine import analyze_routine
 from services.confidence_engine import calculate_confidence
 from services.authenticity_engine import analyze_authenticity
+from services.response_formatter import format_final_response
+
+
 
 
 app = FastAPI(title="InciGuide AI Backend")
@@ -45,13 +48,13 @@ def analyze_product(request: ProductAnalysisRequest):
         authenticity
     )
 
-    return {
-        "product_name": request.product_name,
-        "skin_type": request.skin_type,
-        "routine_step": request.routine_step,
-        "ingredient_analysis": ingredient_analysis,
-        "routine_analysis": routine_analysis,
-        "confidence": confidence["level"],
-        "confidence_score": confidence["score"],
-        "authenticity_confidence": authenticity
-    }
+    return format_final_response(
+        product_name=request.product_name,
+        skin_type=request.skin_type,
+        routine_step=request.routine_step,
+        ingredient_analysis=ingredient_analysis,
+        routine_analysis=routine_analysis,
+        confidence_level=confidence["level"],
+        confidence_score=confidence["score"],
+        authenticity=authenticity
+    )
