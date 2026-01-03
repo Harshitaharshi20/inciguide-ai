@@ -20,3 +20,4 @@ transparently, and responsibly.
 - Version Control: GitHub
 
 ## 📦 Project Structure
+- Backend feature development is frozen for MVP.
