@@ -1,5 +1,10 @@
 # InciGuide AI – System Architecture
 
+- React frontend sends product data to FastAPI
+- Backend processes data using modular AI engines
+- Results are returned as structured JSON
+- Docker Compose connects services internally
+
 ## High-Level Flow
 User Input → FastAPI API → AI Engines → Confidence Engine → Safe Response
 
@@ -15,3 +20,4 @@ User Input → FastAPI API → AI Engines → Confidence Engine → Safe Respons
 - Rule-based logic
 - Safety-first outputs
 - Modular backend services
+
