@@ -25,7 +25,7 @@ function App() {
 
   return (
   <div style={{ color: "white", padding: "40px" }}>
-    <h1>InciGuide AI</h1>
+    <h1 className="text-4xl font-bold text-blue-700">InciGuide </h1>
     <p>AI-powered skincare ingredient analysis</p>
 
     <ProductForm onAnalyze={handleAnalyze} loading={loading} />

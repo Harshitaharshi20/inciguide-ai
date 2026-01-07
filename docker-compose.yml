@@ -6,11 +6,16 @@ services:
       - "8000:8000"
     restart: always
 
+  
   frontend:
     build: ./frontend/web
     container_name: inciguide-frontend
     ports:
       - "5173:5173"
+    volumes:
+      - ./frontend/web:/app
+      - /app/node_modules
+    command: npm run dev -- --host
     depends_on:
       - backend
     restart: always
