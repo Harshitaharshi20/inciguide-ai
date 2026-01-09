@@ -94,7 +94,7 @@ export default function HomePage() {
             <button
               type="button"
               className="w-full border rounded-md px-3 py-3 bg-white text-[#223118]"
-              onClick={() => navigate("/facescan")}
+              onClick={() => navigate("/face-scan")}
             >
               📷 Take Photo
             </button>
